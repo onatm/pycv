@@ -1,6 +1,5 @@
 FROM ubuntu:14.04
 
-#3.4.3
 ENV PYTHON_VERSION 2.7
 ENV NUM_CORES 4
 
@@ -34,5 +33,5 @@ RUN make install
 RUN ldconfig
 RUN mkdir /home/workspace
 WORKDIR /home/workspace
-# Define default command.
+VOLUME /home/workspace
 CMD ["bash"]
