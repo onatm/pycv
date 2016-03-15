@@ -33,5 +33,5 @@ RUN make install
 RUN ldconfig
 RUN mkdir /home/workspace
 WORKDIR /home/workspace
-VOLUME /home/workspace
+VOLUME ["/home/workspace"]
 CMD ["bash"]
